@@ -22,5 +22,12 @@ public class Main {
         rhd.performSwim();
         System.out.println("---------------");
 
+        DecoyDuck dk  = new DecoyDuck();
+        System.out.println("---------------");
+        dk.display();
+        dk.performQuack();
+        dk.performSwim();
+        System.out.println("---------------");
+
     }
 }
