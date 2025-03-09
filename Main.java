@@ -8,5 +8,12 @@ public class Main {
         rb.performSwim();
         System.out.println("---------------");
 
+        MallardDuck md = new MallardDuck();
+        System.out.println("---------------");
+        md.display();
+        md.performQuack();
+        md.performSwim();
+        System.out.println("---------------");
+
     }
 }
