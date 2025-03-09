@@ -6,6 +6,7 @@ public class Main {
         rb.display();
         rb.performQuack();
         rb.performSwim();
+        rb.performFly();
         System.out.println("---------------");
 
         MallardDuck md = new MallardDuck();
@@ -13,6 +14,7 @@ public class Main {
         md.display();
         md.performQuack();
         md.performSwim();
+        md.performFly();
         System.out.println("---------------");
 
         RedHeadDuck rhd  = new RedHeadDuck();
@@ -20,6 +22,7 @@ public class Main {
         rhd.display();
         rhd.performQuack();
         rhd.performSwim();
+        rhd.performFly();
         System.out.println("---------------");
 
         DecoyDuck dk  = new DecoyDuck();
@@ -27,6 +30,7 @@ public class Main {
         dk.display();
         dk.performQuack();
         dk.performSwim();
+        dk.performFly();
         System.out.println("---------------");
 
     }
