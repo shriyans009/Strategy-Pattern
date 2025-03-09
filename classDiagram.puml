@@ -1,0 +1,95 @@
+@startuml
+
+' Interfaces
+interface SwimBehaviour {
+    +swim()
+}
+
+interface FlyBehavior {
+    +fly()
+}
+
+interface QuackBehaviour {
+    +quack()
+}
+
+' Abstract Duck Class
+abstract class Duck {
+    -QuackBehaviour quackBehaviour
+    -SwimBehaviour swimBehaviour
+    -FlyBehavior flyBehavior
+    +setSwimBehaviour(SwimBehaviour swimBehaviour)
+    +setQuackBehaviour(QuackBehaviour quackBehaviour)
+    +setFlyBehavior(FlyBehavior flyBehavior)
+    +performQuack()
+    +performSwim()
+    +performFly()
+    +display()
+}
+
+' Ducks
+class MallardDuck {
+    +display()
+}
+class RedHeadDuck {
+    +display()
+}
+class RubberDuck {
+    +display()
+}
+class DecoyDuck {
+    +display()
+}
+
+' Swim Behaviour Implementations
+class SwimWithLegs {
+    +swim()
+}
+class Floating {
+    +swim()
+}
+class Drown {
+    +swim()
+}
+
+' Fly Behaviour Implementations
+class Fly {
+    +fly()
+}
+class NotFly {
+    +fly()
+}
+
+' Quack Behaviour Implementations
+class Quack {
+    +quack()
+}
+class Squeak {
+    +quack()
+}
+class MuteQuack {
+    +quack()
+}
+
+' Relationships
+Duck --|> MallardDuck
+Duck --|> RedHeadDuck
+Duck --|> RubberDuck
+Duck --|> DecoyDuck
+
+SwimBehaviour <|.. SwimWithLegs
+SwimBehaviour <|.. Floating
+SwimBehaviour <|.. Drown
+
+FlyBehavior <|.. Fly
+FlyBehavior <|.. NotFly
+
+QuackBehaviour <|.. Quack
+QuackBehaviour <|.. Squeak
+QuackBehaviour <|.. MuteQuack
+
+Duck --> QuackBehaviour : uses
+Duck --> SwimBehaviour : uses
+Duck --> FlyBehavior : uses
+
+@enduml
