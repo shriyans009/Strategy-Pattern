@@ -37,8 +37,8 @@ Strategy-Pattern/
 │   ├── RubberDuck.java
 │   ├── DecoyDuck.java
 │── Main.java
-│── UML/
-│   ├── duck_uml.puml (PlantUML Class Diagram)
+│── DuckclassDiagram.png
+│── classDiagram.puml (PlantUML Class Diagram)
 │── README.md
 ```
 
@@ -104,8 +104,8 @@ Defines `quack()` method. Implemented by:
 
 The UML Class Diagram for this project is generated using **PlantUML**.
 
-- You can find it in the `UML/duck_uml.puml` file.
-- Open it in IntelliJ IDEA using the **PlantUML Plugin**.
+![Duck UML Diagram](DuckclassDiagram.png)
+
 
 ## 🛠️ Future Enhancements
 
