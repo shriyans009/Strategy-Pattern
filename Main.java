@@ -15,5 +15,12 @@ public class Main {
         md.performSwim();
         System.out.println("---------------");
 
+        RedHeadDuck rhd  = new RedHeadDuck();
+        System.out.println("---------------");
+        rhd.display();
+        rhd.performQuack();
+        rhd.performSwim();
+        System.out.println("---------------");
+
     }
 }
