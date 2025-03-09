@@ -5,6 +5,7 @@ public class Main {
         System.out.println("---------------");
         rb.display();
         rb.performQuack();
+        rb.performSwim();
         System.out.println("---------------");
 
     }
